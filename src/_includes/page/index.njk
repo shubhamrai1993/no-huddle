@@ -1,0 +1,204 @@
+<div id="wholesite">
+  <div class="container">
+    <div class="hero">
+      <div id="plsstop">
+        <h1 class="name">
+          dont
+          <span id="strike">huddle</span>
+        </h1>
+      </div>
+      <span class="subtitle">{{ _("header.subtitle") }}</span>
+      <h2 class="lead">
+        {{ _md("header.introduction") }}
+      </h2>
+    </div>
+  </div>
+
+  <div class="container nonos">
+    <div class="sections sectionleft">
+      <h2 class="section-title">{{ _("example.bad.title") }}</h2>
+      <div class="list-card example one">
+        <div class="slack">
+          {% image "./src/img/keith.png", _("example.character.bad.avatar-description") %}
+          <span class="slackname">{{ _("example.character.bad.name") }}</span>
+          <span class="slacktime">{{ _("example.bad.message1.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.bad.message1.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
+          <span class="slackname">{{ _("example.character.neutral.name") }}</span>
+          <span class="slacktime">{{ _("example.bad.reply1.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.bad.reply1.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/keith.png", _("example.character.bad.avatar-description") %}
+          <span class="slackname">{{ _("example.character.bad.name") }}</span>
+          <span class="slacktime">{{ _("example.bad.message2.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.bad.message2.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
+          <span class="slackname">{{ _("example.character.neutral.name") }}</span>
+          <span class="slacktime">{{ _("example.bad.reply2.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.bad.reply2.body") }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections sectionright">
+      <div class="list-card">
+        <div>
+          {{ _mdp('example.bad.body', currentYear) }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container yepyep">
+    <div class="sections sectionleft">
+      <h2 class="section-title yepyep">{{ _("example.good.title") }}</h2>
+      <div class="list-card example two">
+        <div class="slack">
+          {% image "./src/img/dawn.png", _("example.character.good.avatar-description") %}
+          <span class="slackname">{{ _("example.character.good.name") }}</span>
+          <span class="slacktime">{{ _("example.good.message1.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.good.message1.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
+          <span class="slackname">{{ _("example.character.neutral.name") }}</span>
+          <span class="slacktime">{{ _("example.good.reply1.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.good.reply1.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/dawn.png", _("example.character.good.avatar-description") %}
+          <span class="slackname">{{ _("example.character.good.name") }}</span>
+          <span class="slacktime">{{ _("example.good.message2.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.good.message2.body") }}</span>
+        </div>
+        <div class="slack">
+          {% image "./src/img/tim.png", _("example.character.neutral.avatar-description") %}
+          <span class="slackname">{{ _("example.character.neutral.name") }}</span>
+          <span class="slacktime">{{ _("example.good.reply2.timestamp") }}</span><br />
+          <span class="slackmessage">{{ _("example.good.reply2.body") }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections sectionright">
+      <div class="list-card">
+        <div>
+          {{ _mdp('example.good.body') }}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container scheduling-section">
+    <div class="sections">
+      <h2 class="section-title">Try it: Schedule a meeting the right way</h2>
+      <div class="scheduling-widget">
+        <div class="meeting-request-form">
+          <h3>Meeting Request Builder</h3>
+          <div class="form-group">
+            <label>Topic:</label>
+            <input type="text" id="meetingTopic" placeholder="What do you need to discuss?" />
+          </div>
+          <div class="form-group">
+            <label>Estimated Duration:</label>
+            <select id="meetingDuration">
+              <option value="15">15 minutes</option>
+              <option value="30">30 minutes</option>
+              <option value="45">45 minutes</option>
+              <option value="60">60 minutes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Urgency:</label>
+            <select id="meetingUrgency">
+              <option value="flexible">Flexible - can wait</option>
+              <option value="today">Needed today</option>
+              <option value="urgent">Urgent - within 2 hours</option>
+            </select>
+          </div>
+          <button id="generateRequest">Generate Request</button>
+          
+          <div id="generatedRequest" class="generated-message">
+            <!-- Generated message will appear here -->
+          </div>
+        </div>
+        
+        <div class="time-slots">
+          <h3>Available Time Slots (Example)</h3>
+          <div class="slots-container">
+            <div class="slot available" data-time="9:00 AM">9:00 AM</div>
+            <div class="slot busy" data-time="10:00 AM">10:00 AM (Busy)</div>
+            <div class="slot available" data-time="11:00 AM">11:00 AM</div>
+            <div class="slot available" data-time="2:00 PM">2:00 PM</div>
+            <div class="slot busy" data-time="3:00 PM">3:00 PM (Busy)</div>
+            <div class="slot available" data-time="4:00 PM">4:00 PM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>
+      {{ _md('footer.note') }}
+    </p>
+    <p>
+      {{ _md('footer.warning') }}
+    </p>
+    <p>
+      {{ _md('footer.thanks') }}
+    </p>
+    <p>
+    </p>
+
+    <section class="other-languages">
+      <p>
+        {{ _('footer.languages') }}
+      </p>
+
+      <ul>
+      {% for locale in locales %}
+        <li
+          ><a
+            href="{%- relocalizePath locale.path, page.url -%}"
+            class="lang-chooser"
+            data-lang="{{ locale.path }}"
+            hreflang="{{ locale.path }}"
+          >{{ locale.name }}</a
+        ></li>
+      {% endfor %}
+      </ul>
+    </section>
+
+    <script>
+      const langChoosers = document.querySelectorAll('.lang-chooser');
+
+      for (const langChooser of langChoosers) {
+        const lang = langChooser.dataset.lang;
+
+        langChooser.addEventListener('click', (evt) => {
+          localStorage.setItem('lang', lang);
+        });
+      }
+    </script>
+  </footer>
+</div>
+
+<div id="preloadimg"></div>
+
+<style type="text/css">
+#preloadimg.now {
+  background: url({%- imageURL "./src/img/why.gif", { format: "webp", animated: true } -%}) no-repeat -9999px -9999px;
+}
+</style>
+
+<script>
+whyyyyy = "url('{%- imageURL "./src/img/why.gif", { format: "webp", animated: true } -%}')"
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="/js/nohuddle.js"></script>
+<script src="/js/huddle.js"></script>
+<script src="/js/scheduler.js"></script>
