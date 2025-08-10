@@ -1,16 +1,8 @@
-# No Hello
+# No Huddle
 
-Hello!
+Please don't call on huddle directly
 
 https://no-huddle.net/
-
-## Translators
-
-We've added language support to the site, but are still working out the best workflow for people to submit translations. (There's a small amount of manual work required on the code side!)
-
-If you'd like to submit a translation, you can find us on [Transifex](https://www.transifex.com/nohello/nohellodotnet/). I _think_ you can suggest translations directly on their site without needing an invite to the organisation, but I'm not sure exactly. Let us know! Let's figure it out.
-
-Either way, open an issue on our GitHub repo, and we'll work out the best way to proceed :)
 
 ## Programmers
 
@@ -41,10 +33,4 @@ yarn check-snapshots  # do your snapshots match?
 yarn update-snapshots # if not, update your snapshots!
 ```
 
-### Translations
-
-- we use [Transifex](https://www.transifex.com/)
-- we use [Transifex CLI](https://github.com/transifex/cli/releases) (currently no `brew` package!)
-- the base language is English
-
-Changed base strings? `yarn strings:push`. Updated translations? `yarn strings:pull`.
+Code reused from https://github.com/nohello-net/site/

@@ -1,6 +1,6 @@
 {
   "name": "no-huddle.net",
-  "description": "please don't say just hello in chat",
+  "description": "please don't call on huddle directly",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
