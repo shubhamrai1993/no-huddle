@@ -36,6 +36,20 @@
     <link rel="alternate" hreflang="{{ locale.path }}" href="{{ site.root }}{% relocalizePath locale.path, page.url %}" />
     {% endfor %}
     <link rel="alternate" hreflang="x-default" href="{{ site.root }}/" />
+    
+    <script>
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-G65QSBF4S4';
+        document.head.appendChild(script);
+        
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-G65QSBF4S4');
+      }
+    </script>
   </head>
   <body>
     {{ content | safe }}
