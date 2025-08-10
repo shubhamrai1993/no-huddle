@@ -2,5 +2,17 @@
 layout: _layout
 ---
 <script type="module">
-window.location = '/en/';
+import { languageMatcher } from '/js/languageMatcher.js';
+
+const langs = [
+  {%- for locale in locales -%}
+    '{{ locale.path }}',
+  {%- endfor -%}
+];
+
+const base = langs[0];
+const preferred = localStorage.getItem('lang');
+
+const destination = languageMatcher(langs, base, preferred, navigator.language);
+window.location = destination;
 </script>

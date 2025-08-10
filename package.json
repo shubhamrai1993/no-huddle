@@ -1,10 +1,10 @@
 {
-  "name": "dont-huddle.net",
-  "description": "please don't call sudden huddles - ask first or schedule time",
+  "name": "nohello.net",
+  "description": "please don't say just hello in chat",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/dont-huddle-net/site/"
+    "url": "https://github.com/nohello-net/site/"
   },
   "type": "commonjs",
   "scripts": {
@@ -52,7 +52,6 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
     "@11ty/eleventy-img": "^2.0.0",
-    "eleventy-plugin-i18n-gettext": "^1.5.1",
     "gettext-parser": "^5.1.1",
     "glob": "^7.2.0",
     "marked": "^4.0.12",

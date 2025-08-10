@@ -100,7 +100,7 @@
   },
   "exclude": [
     "build",
-
+    "vendor/eleventy-plugin-i18n-gettext/tests/**",
     "locales/messages.js"
   ]
 }

@@ -1,8 +1,8 @@
 // the sequence
-const nohelloCode = ['h', 'u', 'd', 'd', 'l', 'e'];
+const nohuddleCode = ['h', 'u', 'd', 'd', 'l', 'e'];
 
 // a variable to remember the 'position' the user has reached so far.
-let nohelloCodePosition = 0;
+let nohuddleCodePosition = 0;
 
 function activateWut() {
   // @ts-ignore
@@ -39,24 +39,24 @@ function activateWut() {
 // add keydown event listener
 document.addEventListener('keydown', (e) => {
   // get the value of the required key from the code
-  const requiredKey = nohelloCode[nohelloCodePosition];
+  const requiredKey = nohuddleCode[nohuddleCodePosition];
 
   // compare the key with the required key
   if (e.key === requiredKey) {
     // move to the next key in the  sequence
-    nohelloCodePosition += 1;
+    nohuddleCodePosition += 1;
 
     // if the last key is reached, activate wut
-    if (nohelloCodePosition === nohelloCode.length) {
+    if (nohuddleCodePosition === nohuddleCode.length) {
       activateWut();
-      nohelloCodePosition = 0;
-    } else if (nohelloCodePosition === 2) {
+      nohuddleCodePosition = 0;
+    } else if (nohuddleCodePosition === 2) {
       const preload = document.getElementById('preloadimg');
       if (preload != null) {
         preload.classList.add('now');
       }
     }
   } else {
-    nohelloCodePosition = 0;
+    nohuddleCodePosition = 0;
   }
 });

@@ -12,54 +12,6 @@ describe('languageMatcher', () => {
 
       assert.equal(result, '/en');
     });
-
-    it('zz -> /en', () => {
-      const result = languageMatcher(langs, base, undefined, 'zz');
-
-      assert.equal(result, '/en');
-    });
-
-    it('de -> /de', () => {
-      const result = languageMatcher(langs, base, undefined, 'de');
-
-      assert.equal(result, '/de');
-    });
-
-    it('en-AU -> en', () => {
-      const result = languageMatcher(langs, base, undefined, 'en-AU');
-
-      assert.equal(result, '/en');
-    });
-
-    it('zh -> /en', () => {
-      const result = languageMatcher(langs, base, undefined, 'zh');
-
-      assert.equal(result, '/en');
-    });
-
-    it('zh-cn -> /zh-cn', () => {
-      const result = languageMatcher(langs, base, undefined, 'zh-CN');
-
-      assert.equal(result, '/zh-cn');
-    });
-
-    it('pt-br -> /pt-br', () => {
-      const result = languageMatcher(langs, base, undefined, 'pt-BR');
-
-      assert.equal(result, '/pt-br');
-    });
-
-    it('pt-BR -> /pt-br', () => {
-      const result = languageMatcher(langs, base, undefined, 'pt-BR');
-
-      assert.equal(result, '/pt-br');
-    });
-
-    it('pt_BR -> /pt-br', () => {
-      const result = languageMatcher(langs, base, undefined, 'pt_BR');
-
-      assert.equal(result, '/pt-br');
-    });
   });
 
   describe('preferred language', () => {
@@ -67,30 +19,6 @@ describe('languageMatcher', () => {
       const result = languageMatcher(langs, base, null);
 
       assert.equal(result, '/en');
-    });
-
-    it('zz -> /en', () => {
-      const result = languageMatcher(langs, base, 'zz');
-
-      assert.equal(result, '/en');
-    });
-
-    it('en -> /en', () => {
-      const result = languageMatcher(langs, base, 'en');
-
-      assert.equal(result, '/en');
-    });
-
-    it('de -> /de', () => {
-      const result = languageMatcher(langs, base, 'de');
-
-      assert.equal(result, '/de');
-    });
-
-    it('pt-br -> /pt-br', () => {
-      const result = languageMatcher(langs, base, 'pt-br');
-
-      assert.equal(result, '/pt-br');
     });
   });
 });

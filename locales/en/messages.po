@@ -5,10 +5,10 @@ msgstr ""
 "Language: en\n"
 
 msgid "header.subtitle"
-msgstr "Please don't call sudden huddles without context"
+msgstr "Please don't call sudden slack huddles without context"
 
 msgid "header.introduction"
-msgstr "Don't start a call with just a vague meeting invite. Provide context about what you need to discuss, how long it will take, and offer scheduling options. The person you're contacting might be in deep focus, in another meeting, or dealing with personal matters."
+msgstr "Don't start a call without context. Provide context about what you need to discuss, how long it will take, and offer scheduling options. The person you're contacting might be in deep focus, in another meeting, or dealing with personal matters. It also might not be as much of a priority as you think."
 
 msgid "example.bad.title"
 msgstr "Don't do this:"
@@ -23,7 +23,7 @@ msgid "example.bad.message1.timestamp"
 msgstr "2:32 PM"
 
 msgid "example.bad.message1.body"
-msgstr "quick huddle?"
+msgstr "called you. lmk when free"
 
 msgid "example.character.neutral.avatar-description"
 msgstr "Avatar of Tim"
@@ -41,7 +41,7 @@ msgid "example.bad.message2.timestamp"
 msgstr "2:33 PM"
 
 msgid "example.bad.message2.body"
-msgstr "can you hop on a call?"
+msgstr "call back when free"
 
 msgid "example.bad.reply2.timestamp"
 msgstr "2:45 PM"
@@ -50,7 +50,7 @@ msgid "example.bad.reply2.body"
 msgstr "I'm in the middle of something, what's it about?"
 
 msgid "example.bad.body"
-msgstr "**The issue:** Starting a call request without context forces the recipient to:\n\n- Stop their current work to ask for clarification\n- Mentally context-switch without preparation\n- Wonder if it's urgent or can wait\n- Feel obligated to respond immediately\n\nThis creates unnecessary interruptions and anxiety."
+msgstr "**The issue:** Starting a call request without context forces the recipient to:\n\n- Stop their current work to decide if they want to talk\n- Mentally context-switch without preparation\n- Wonder if it's urgent or can wait\n- Feel obligated to respond immediately\n\nThis creates unnecessary interruptions and anxiety."
 
 msgid "example.good.title"
 msgstr "Do this instead:"
@@ -65,19 +65,19 @@ msgid "example.good.message1.timestamp"
 msgstr "2:32 PM"
 
 msgid "example.good.message1.body"
-msgstr "Hi! Could we do a 15-min call about the API integration issues? I'm seeing some errors in the logs and would like to walk through them together. Available now or I can schedule for later today?"
+msgstr "Hi! Need 15 mins about the API integration issues? I'm seeing some errors in the logs and would like to walk through them together. Blocking for later today. LMK if available now"
 
 msgid "example.good.reply1.timestamp"
 msgstr "2:32 PM"
 
 msgid "example.good.reply1.body"
-msgstr "I'm in focus mode until 4 PM. How about 4:15?"
+msgstr "I'm in focus mode until 4 PM. Can we do 4:15?"
 
 msgid "example.good.message2.timestamp"
 msgstr "2:33 PM"
 
 msgid "example.good.message2.body"
-msgstr "Perfect! I'll send a calendar invite for 4:15 PM. Thanks!"
+msgstr "Perfect! I'll move it to 4:15 PM. Thanks!"
 
 msgid "example.good.reply2.timestamp"
 msgstr "2:33 PM"
@@ -86,7 +86,7 @@ msgid "example.good.reply2.body"
 msgstr "👍"
 
 msgid "example.good.body"
-msgstr "**Much better!** This approach:\n\n- Provides context about the topic and urgency\n- Estimates the time needed\n- Offers scheduling flexibility\n- Respects the recipient's current focus\n- Reduces anxiety and interruption\n\nThe recipient can decide when to engage based on their current priorities."
+msgstr "**Much better!** This approach:\n\n- Provides context about the topic and urgency\n- Estimates the time needed\n- Offers scheduling flexibility\n- Respects the recipient's current focus\n- Reduces anxiety and interruption\n- Allows them to keep calls open for real emergencies\n\nThe recipient can decide when to engage based on their current priorities."
 
 msgid "footer.note"
 msgstr "Asking first and providing context shows respect for others' time and mental space."
@@ -96,6 +96,3 @@ msgstr "**Remember:** Urgent doesn't always mean immediate. Most \"urgent\" meet
 
 msgid "footer.thanks"
 msgstr "Thanks for being considerate with your meeting requests!"
-
-msgid "footer.languages"
-msgstr "This page in other languages:"

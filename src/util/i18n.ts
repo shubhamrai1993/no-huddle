@@ -1,7 +1,7 @@
 import { marked } from 'marked';
 import i18n, {
   LanguageDirection,
-} from 'eleventy-plugin-i18n-gettext';
+} from '../../vendor/eleventy-plugin-i18n-gettext/src/i18n';
 
 const enhance11tydata = (
   objArg: any,

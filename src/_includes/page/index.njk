@@ -3,8 +3,8 @@
     <div class="hero">
       <div id="plsstop">
         <h1 class="name">
-          dont
-          <span id="strike">huddle</span>
+          no
+          <span id="strike">slack huddle</span>
         </h1>
       </div>
       <span class="subtitle">{{ _("header.subtitle") }}</span>
@@ -90,56 +90,6 @@
       </div>
     </div>
   </div>
-  
-  <div class="container scheduling-section">
-    <div class="sections">
-      <h2 class="section-title">Try it: Schedule a meeting the right way</h2>
-      <div class="scheduling-widget">
-        <div class="meeting-request-form">
-          <h3>Meeting Request Builder</h3>
-          <div class="form-group">
-            <label>Topic:</label>
-            <input type="text" id="meetingTopic" placeholder="What do you need to discuss?" />
-          </div>
-          <div class="form-group">
-            <label>Estimated Duration:</label>
-            <select id="meetingDuration">
-              <option value="15">15 minutes</option>
-              <option value="30">30 minutes</option>
-              <option value="45">45 minutes</option>
-              <option value="60">60 minutes</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label>Urgency:</label>
-            <select id="meetingUrgency">
-              <option value="flexible">Flexible - can wait</option>
-              <option value="today">Needed today</option>
-              <option value="urgent">Urgent - within 2 hours</option>
-            </select>
-          </div>
-          <button id="generateRequest">Generate Request</button>
-          
-          <div id="generatedRequest" class="generated-message">
-            <!-- Generated message will appear here -->
-          </div>
-        </div>
-        
-        <div class="time-slots">
-          <h3>Available Time Slots (Example)</h3>
-          <div class="slots-container">
-            <div class="slot available" data-time="9:00 AM">9:00 AM</div>
-            <div class="slot busy" data-time="10:00 AM">10:00 AM (Busy)</div>
-            <div class="slot available" data-time="11:00 AM">11:00 AM</div>
-            <div class="slot available" data-time="2:00 PM">2:00 PM</div>
-            <div class="slot busy" data-time="3:00 PM">3:00 PM (Busy)</div>
-            <div class="slot available" data-time="4:00 PM">4:00 PM</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
   <footer>
     <p>
       {{ _md('footer.note') }}
@@ -152,25 +102,6 @@
     </p>
     <p>
     </p>
-
-    <section class="other-languages">
-      <p>
-        {{ _('footer.languages') }}
-      </p>
-
-      <ul>
-      {% for locale in locales %}
-        <li
-          ><a
-            href="{%- relocalizePath locale.path, page.url -%}"
-            class="lang-chooser"
-            data-lang="{{ locale.path }}"
-            hreflang="{{ locale.path }}"
-          >{{ locale.name }}</a
-        ></li>
-      {% endfor %}
-      </ul>
-    </section>
 
     <script>
       const langChoosers = document.querySelectorAll('.lang-chooser');
@@ -200,5 +131,4 @@ whyyyyy = "url('{%- imageURL "./src/img/why.gif", { format: "webp", animated: tr
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="/js/nohuddle.js"></script>
-<script src="/js/huddle.js"></script>
-<script src="/js/scheduler.js"></script>
+<script src="/js/nohuddle.js"></script>
