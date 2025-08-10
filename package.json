@@ -1,10 +1,10 @@
 {
-  "name": "nohello.net",
+  "name": "no-huddle.net",
   "description": "please don't say just hello in chat",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/nohello-net/site/"
+    "url": "https://github.com/shubhamrai1993/no-huddle"
   },
   "type": "commonjs",
   "scripts": {
