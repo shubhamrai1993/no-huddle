@@ -18,7 +18,7 @@ jobs:
       - run: yarn install
       - run: npx playwright install --with-deps chromium
       - run: yarn ci:ui:update
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: ui-snapshots
@@ -35,7 +35,7 @@ jobs:
       - run: npx playwright install --with-deps chromium
       - run: fc-list
       - run: yarn ci:ui
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: ui-test-results
