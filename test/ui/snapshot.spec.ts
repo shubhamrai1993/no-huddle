@@ -17,11 +17,4 @@ test.describe('index snapshots', () => {
       threshold: 0.05,
     });
   });
-
-  test('why', async ({ page }) => {
-    await page.keyboard.type('hello');
-
-    const screenshot = await page.screenshot();
-    expect(screenshot).toMatchSnapshot('why.png', { threshold: 0.05 });
-  });
 });

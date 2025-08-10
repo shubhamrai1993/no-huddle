@@ -11,7 +11,7 @@
     "11ty": "yarn esr --cache ./node_modules/.bin/eleventy --config ./.eleventy.ts",
     "build": "yarn 11ty",
     "serve": "yarn 11ty --serve --port=8123",
-    "check-snapshots": "act -j check-snapshots -P ubuntu-latest=mcr.microsoft.com/playwright:v1.16.3 -W ./.github/local-workflows --reuse --artifact-server-path build-artifacts; yarn post-snapshots",
+    "check-snapshots": "act --container-architecture linux/amd64 -j check-snapshots -P ubuntu-latest=mcr.microsoft.com/playwright:v1.16.3 -W ./.github/local-workflows --reuse --artifact-server-path build-artifacts; yarn post-snapshots",
     "update-snapshots": "act -j update-snapshots -P ubuntu-latest=mcr.microsoft.com/playwright:v1.16.3 -W ./.github/local-workflows --reuse --artifact-server-path build-artifacts; yarn post-snapshots",
     "post-snapshots": "./bin/post-snapshots.ts",
     "format": "prettier --write .",
