@@ -95,4 +95,4 @@ msgid "footer.warning"
 msgstr "**Remember:** Urgent doesn't always mean immediate. Most \"urgent\" meetings can wait 30 minutes for proper scheduling."
 
 msgid "footer.thanks"
-msgstr "Thanks for being considerate with your meeting requests!"
+msgstr "Based on nohello.net. Avatars taken from The Office. Open-source on [GitHub](https://github.com/shubhamrai1993/no-huddle)."
